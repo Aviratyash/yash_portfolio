@@ -49,7 +49,13 @@ export default function Projects(){
       <h3 className="text-xl font-semibold">Projects</h3>
       <div className="mt-4 grid sm:grid-cols-2 gap-4">
         {projects.map((p,i) => (
-          <motion.article key={i} className="p-4 rounded-lg bg-vc-blue-800/30 border border-vc-blue-600" variants={itemVariants}>
+          // The 'whileHover' prop is added to the line below
+          <motion.article 
+            key={i} 
+            className="p-4 rounded-lg bg-vc-blue-800/30 border border-vc-blue-600" 
+            variants={itemVariants}
+            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
+          >
             <h4 className="font-medium">{p.title}</h4>
             <div className="text-sm text-slate-400">{p.date}</div>
             <p className="mt-2 text-slate-300 text-sm">{p.desc}</p>
