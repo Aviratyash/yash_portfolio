@@ -19,22 +19,29 @@ export default function About(){
       variants={sectionVariants}
     >
       <h3 className="text-xl font-semibold">About</h3>
-      <p className="mt-3 text-slate-200">I am a cybersecurity practitioner with hands-on experience in security monitoring, log analysis, incident response, and penetration testing. I have a theoretical understanding of ISO 27001 and PCI DSS, and practical experience with cloud security and detection engineering.</p>
-
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
-        <div>
-          <strong>Education</strong>
-          <p className="text-sm text-slate-300">M.Sc Cybersecurity — Amity University Rajasthan (SGPA: 8.7)</p>
-        </div>
-        <div>
-          <strong>Location</strong>
-          <p className="text-sm text-slate-300">Jaipur, Rajasthan</p>
-        </div>
-        <div>
-          <strong>Contact</strong>
-          <p className="text-sm text-slate-300">yashingole2003@gmail.com</p>
-        </div>
-      </div>
+      {/* Updated paragraph below */}
+      <p className="mt-3 text-slate-200">
+        [cite_start]A cybersecurity professional with hands-on experience in Security Monitoring, log analysis, and incident response using SIEM (ELK, Splunk, Wazuh) and IDS/IPS (Snort, Suricata)[cite: 8]. [cite_start]I have a theoretical understanding of ISO 27001 and PCI DSS for compliance alignment and am skilled in MITRE ATT&CK threat mapping and proactive threat hunting[cite: 9, 10].
+      </p>
+      
+      {/* Updated education section below */}
+      <div className="mt-6 border-t border-vc-blue-600/60 pt-6">
+        <h4 className="text-lg font-semibold">Education</h4>
+        <div className="mt-3 space-y-4">
+          <div>
+            [cite_start]<div className="font-medium">M.Sc Cybersecurity (2026) [cite: 26, 32]</div>
+            [cite_start]<p className="text-sm text-slate-300">Amity University Rajasthan — SGPA: 8.7 [cite: 26, 27]</p>
+          </div>
+          <div>
+            [cite_start]<div className="font-medium">B.Sc Forensic Science (2024) [cite: 28, 34]</div>
+            [cite_start]<p className="text-sm text-slate-300">Government Institute of Forensic Science — Percentage: 71.19 [cite: 28]</p>
+          </div>
+          <div>
+            [cite_start]<div className="font-medium">Senior Secondary (Class 12) (2021) [cite: 29, 36]</div>
+            [cite_start]<p className="text-sm text-slate-300">Gandhi city junior college — Percentage: 93.3 [cite: 29, 30]</p>
+          </div>
+        </div>
+      </div>
     </motion.section>
   )
 }
